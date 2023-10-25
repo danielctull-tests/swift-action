@@ -11,6 +11,6 @@ inputs:
     default: '--version'
 runs:
   using: 'docker'
-  image: 'swift:${{ inputs.verison }}'
+  image: 'swift:5.9'
   steps:
     - run: swift --version
