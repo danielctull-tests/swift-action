@@ -12,5 +12,4 @@ inputs:
 runs:
   using: 'docker'
   image: 'swift:5.9'
-  steps:
-    - run: swift --version
+  main: swift --version
