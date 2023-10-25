@@ -1,0 +1,19 @@
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: 
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Swift Version 5.8
+        uses: ./
+        with:
+          version: '5.8'
+          command: '--version'
+      - name: Swift Version 5.9
+        uses: ./
+        with:
+          version: '5.9'
+          command: '--version'

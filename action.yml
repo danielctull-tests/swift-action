@@ -1,0 +1,14 @@
+name: 'Swift Test'
+description: 'Run swift test on a swift package.'
+inputs:
+  version:
+    description: 'The swift version to use.'
+    required: true
+    default: 'latest'
+  command:
+    description: 'The swift command to run'
+    required: true
+    default: 'build'
+runs:
+  using: 'docker'
+  image: 'swift:${{ verison }}'
