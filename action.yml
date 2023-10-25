@@ -8,7 +8,9 @@ inputs:
   command:
     description: 'The swift command to run'
     required: true
-    default: 'build'
+    default: '--version'
 runs:
   using: 'docker'
-  image: 'swift:${{ verison }}'
+  image: 'swift:${{ inputs.verison }}'
+  steps:
+    - run: swift --version

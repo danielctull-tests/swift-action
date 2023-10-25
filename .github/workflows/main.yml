@@ -11,9 +11,7 @@ jobs:
         uses: ./
         with:
           version: '5.8'
-          command: '--version'
       - name: Swift Version 5.9
         uses: ./
         with:
           version: '5.9'
-          command: '--version'
